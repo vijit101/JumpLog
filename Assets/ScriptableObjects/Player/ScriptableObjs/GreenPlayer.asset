@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerType: 1
   jumpStep: 1
+  horizontalStep: 1
   playerView: {fileID: -1669132497548556766, guid: 7fe113e6b9179aa44b512aabbdeab215,
     type: 3}

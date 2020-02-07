@@ -10,6 +10,8 @@ namespace LogJump.Player
             playerModel = model;
             playerView = GameObject.Instantiate<PlayerView>(playerModel.playerView);
             playerView.SetMyController(this);
+            playerView.horizontalStep = model.horizontalStep;
+            playerView.jumpForce = model.jumpStep;
         }        
     }
 }

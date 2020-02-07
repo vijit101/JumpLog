@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5969662825742283068}
   - component: {fileID: 4482500084697207788}
   - component: {fileID: -1669132497548556766}
+  - component: {fileID: -1945018586509955351}
+  - component: {fileID: -5766272521103788136}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -93,3 +95,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerViewType: 2
+  jumpForce: 0
+  horizontalStep: 0
+--- !u!58 &-1945018586509955351
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4347081532862816963}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!50 &-5766272521103788136
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4347081532862816963}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

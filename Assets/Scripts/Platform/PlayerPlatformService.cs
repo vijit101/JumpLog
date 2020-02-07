@@ -14,14 +14,16 @@ public class PlayerPlatformService : MonoBehaviour
     {
         PlayerController controller = PlayerService.Instance.GetPlayerController(GetPlayerType);
         controller.playerView.SetPlayerPos(PlayerSpawnPoint.position);
+        controller.playerView.playerViewType = PlatformForPlayer;
+        controller.playerView.MovePlayer();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerView player = collision.gameObject.GetComponent<PlayerView>();
         if (player.playerViewType != PlatformForPlayer)
         {
             Debug.Log(player.playerViewType + "Won");
         }
-    }
+    }   
 }

@@ -5,6 +5,6 @@ using UnityEngine;
 public class PlayerScriptables : ScriptableObject
 {
     public PlayerType playerType;
-    public float jumpStep;
+    public float jumpStep, horizontalStep;
     public PlayerView playerView;
 }
